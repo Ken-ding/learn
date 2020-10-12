@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyRouter</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./dist/main.js"></script>
+  </body>
+  <script type="text/babel">
+    let { BrowserRouter,Route,Link } = MyRouter;
+
+    class Home extends React.Component {
+      render() {
+        return (
+          <div>
+            <Link to="/demo">跳转demo</Link>
+            <h1>Home</h1>
+          </div>
+        )
+    }
+  }
+
+    class Demo extends React.Component {
+      render() {
+        return (
+          <div>
+            <Link to="/">跳转主页</Link>
+            <h1>Demo</h1>
+          </div>
+        )
+        }
+    }
+
+    class App extends React.Component {
+      render() {
+        return (
+          <div>
+          <BrowserRouter>
+            <Route path="/" component={Home}></Route>
+            <Route path="/demo" component={Demo}></Route>
+          </BrowserRouter>
+        </div>
+        );
+      }
+    }
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+  </script>
+</html>
