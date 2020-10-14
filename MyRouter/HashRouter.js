@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import { Provider } from "./context";
 import History from "./history";
 const url = require("url");
