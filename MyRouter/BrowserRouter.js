@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Provider} from "./context";
 import History from "./history";
 const url = require("url");
@@ -8,7 +8,6 @@ class BrowserRouter extends React.Component {
     super();
     this.state = {
       pathname: window.location.pathname || "/",
-      count: 0
     };
   }
   componentDidMount() {
@@ -21,7 +20,6 @@ class BrowserRouter extends React.Component {
     this.setState(
       {
         pathname: window.location.pathname || "/",
-        count: ++this.state.count,
       },(v) => {
         console.log(this.state);
       }
@@ -30,15 +28,13 @@ class BrowserRouter extends React.Component {
   render() {
     let value = {
       type: "BrowserRouter",
-      history: History,
+      history: new History("BrowserRouter"),
       location: Object.assign(
         {
           pathname: "/",
         },
         url.parse(this.state.pathname, true)
-      ),
-      count: this.state.count,
-      cb:this.setPathname,
+      )
     };
     return (
       <Provider value={value}>

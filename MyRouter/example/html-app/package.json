@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"http-server . -c-1 -o"
+    "start": "http-server . -c-1 -o"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "koa": "^2.13.0",
+    "koa-static": "^5.0.0"
   }
 }

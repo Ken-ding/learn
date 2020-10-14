@@ -19,8 +19,7 @@
     <script src="./dist/main.js"></script>
   </body>
   <script type="text/babel">
-    let { BrowserRouter,Route,Link } = MyRouter;
-
+    let { BrowserRouter, Route, Link, HashRouter, Redirect, Switch } = MyRouter;
     class Home extends React.Component {
       render() {
         return (
@@ -28,30 +27,32 @@
             <Link to="/demo">跳转demo</Link>
             <h1>Home</h1>
           </div>
-        )
+        );
+      }
     }
-  }
 
     class Demo extends React.Component {
       render() {
         return (
           <div>
-            <Link to="/">跳转主页</Link>
+            <Link to="/">跳转主页</Link><br/>
+            <Link to="/aa">跳转aa，会重定向到主页</Link>
             <h1>Demo</h1>
           </div>
-        )
-        }
+        );
+      }
     }
 
     class App extends React.Component {
       render() {
         return (
-          <div>
-          <BrowserRouter>
-            <Route path="/" component={Home}></Route>
-            <Route path="/demo" component={Demo}></Route>
-          </BrowserRouter>
-        </div>
+          <HashRouter>
+            <Switch>
+              <Route path="/" component={Home}></Route>
+              <Route path="/demo" component={Demo}></Route>
+              <Redirect to="/"></Redirect>
+            </Switch>
+          </HashRouter>
         );
       }
     }

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack&&node auto/copy.js",
+    "build": "webpack && node auto/copy.js",
     "dev": "http-server example/html-app -c-1 -o",
     "start": "npm run build&&npm run dev"
   },
