@@ -10,7 +10,7 @@ const mapStateToProps=(state)=>{
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
       setInfo: () => {
-        dispatch(setInfo("123"))
+        dispatch(setInfo("瑜"))
       }
     }
   }

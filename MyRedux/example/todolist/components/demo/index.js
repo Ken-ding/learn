@@ -1,14 +1,21 @@
-import React from 'react'
+import React from "react";
 
-class Demo extends React.Component{
-    render(){
-        return(
-            <div>
-                <div>个人信息：{this.props.demo.info} <button onClick={()=>{this.props.setInfo()}}>修改</button></div>
-                <div>上线状态：{String(this.props.demo.online)}</div>
-            </div>
-        )
-    }
+class Demo extends React.Component {
+  render() {
+    return (
+      <div>
+        上线状态：{String(this.props.demo.online)} 个人信息：
+        {this.props.demo.info}{" "}
+        <button
+          onClick={() => {
+            this.props.setInfo();
+          }}
+        >
+          修改
+        </button>
+      </div>
+    );
+  }
 }
 
 export default Demo;

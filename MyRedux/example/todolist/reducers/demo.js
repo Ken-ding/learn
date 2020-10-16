@@ -1,6 +1,6 @@
 const Demo = (state, action) => {
   state = {
-    info: "丁学紧",
+    info: "瑾",
     online: true,
   };
 
