@@ -1,8 +1,5 @@
 # 记录自己实现案例demo
 
-## MyInterview
-[精读javascript高级程序设计]()
-
 ## MyPromise
 [Promise源码解读(一)-手写一个promise](https://blog.csdn.net/ken_ding/article/details/109033916)
     <br/>
