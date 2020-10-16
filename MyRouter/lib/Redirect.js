@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Consumer } from "./context";
 
 class Redirect extends React.Component{

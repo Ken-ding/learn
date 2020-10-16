@@ -1,5 +1,8 @@
 # 记录自己实现案例demo
 
+## MyInterview
+[精读javascript高级程序设计]()
+
 ## MyPromise
 [Promise源码解读(一)-手写一个promise](https://blog.csdn.net/ken_ding/article/details/109033916)
     <br/>
@@ -14,3 +17,7 @@
 
 ## MyRedux
 [手写一个Redux简易版](#) 
+
+## MyInterview
+[升级打怪-精读javascript高级程序(第一章)](https://blog.csdn.net/ken_ding/article/details/109112551)
+[升级打怪-精读javascript高级程序(第二章)]()

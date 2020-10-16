@@ -1,7 +1,7 @@
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: "lib/index.js",
+  entry: "./lib/index.js",
   output: {
     libraryTarget: "umd",
     umdNamedDefine: true,
