@@ -13,7 +13,7 @@
 [手写一个react-router-dom简易版(二)](https://blog.csdn.net/ken_ding/article/details/109061494)
 
 ## MyRedux
-[手写一个Redux简易版](#) 
+[手写一个Redux简易版(一)](https://blog.csdn.net/ken_ding/article/details/109135183) 
 
 ## MyInterview
 [升级打怪-精读javascript高级程序(第一章)](https://blog.csdn.net/ken_ding/article/details/109112551)
