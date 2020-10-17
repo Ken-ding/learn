@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script type="module">
+  import {
+    createStore,
+    combineReducers,
+    applyMiddleware,
+  } from "../../lib/index.js";
+  import count from "./reducers/count.js";
+  import info from "./reducers/info.js";
+  import { increment, decerment, getInfo } from "./action/index.js";
+
+  const reducer = combineReducers({
+    count
+  });
+
+  let store = createStore(reducer,applyMiddleware(err, logger,demo));
+
+  store.subscribe(() => {
+    console.log(store.getState());
+  });
+
+  function err(store) {
+    return function (next) {
+      return function (action) {
+        try {
+          console.log("...err")
+          next(action);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    };
+  }
+
+  function logger(store) {
+    return function (next) {
+      return function (action) {
+        console.log("this state", store.getState());
+        console.log("action", action);
+        next(action);
+        console.log("next state", store.getState());
+      };
+    };
+  }
+
+  function demo(store) {
+    return function (next) {
+      return function (action) {
+        next(action);
+        console.log(".....demo");
+      };
+    };
+  }
+
+  store.dispatch(increment());
+
+  /*生成新的reducer*/
+const nextReducer = combineReducers({
+  count,
+  info
+});
+
+/*replaceReducer*/
+store.replaceReducer(nextReducer);
+
+</script>
