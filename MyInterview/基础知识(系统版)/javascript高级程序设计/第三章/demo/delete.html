@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    "use strict";
+
+　　var x;
+
+　　delete x; // 语法错误
+
+　　var o = Object.create(null, {'x': {
+　　　　　　value: 1,
+　　　　　　configurable: true
+　　}});
+
+　　delete o.x; // 删除成功
+</script>

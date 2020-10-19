@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function f(){
+        console.log(this)//window
+　　　　return !this;
+　　}
+　　// 返回false，因为"this"指向全局对象，"!this"就是false
+    console.log(f());//false
+
+    　function f1(){
+　　　　"use strict";
+        console.log(this);//undefined
+　　　　return !this;
+　　}
+　　// 返回true，因为严格模式下，this的值为undefined，所以"!this"为true
+    console.log(f1());//true
+</script>
