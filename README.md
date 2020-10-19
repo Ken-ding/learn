@@ -18,7 +18,7 @@
 
 [手写一个Redux简易版(二)](#) 
 
-## MyVue
+## MyReact
 [手写一个React简易版](#) 
 
 ## MyInterview
