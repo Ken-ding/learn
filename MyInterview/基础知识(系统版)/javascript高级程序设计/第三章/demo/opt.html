@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let num = 12;
+  let a = 1 + num--;
+  console.log(num);
+  console.log(a);
+
+  let num1 = 12;
+  let b = 1 + --num1;
+  console.log(num1);
+  console.log(b);
+
+  var n1 = "2";
+  n1++;
+  console.log(typeof n1);
+  console.log(n1);
+
+  var n2 = "2a";
+  n2++;
+  console.log(n2);
+
+  var n3 = false;
+  n3++;
+  console.log(n3); //1
+
+  var n4 = true;
+  n4++;
+  console.log(n4); //2
+
+  var n5 = 0.2;
+  n5++;
+  console.log(n5); //1.2
+
+  var o = {
+    valueOf: function () {
+      return -1;
+    },
+  };
+  o--; //-2
+  console.log(o);
+
+
+  var s1="01";
+    console.log(+s1)//数值1
+
+    var s2="1.1";
+    console.log(+s2)//数值1.1
+
+    var s3="z";
+    console.log(+s3)//NaN
+
+    var s4=false;
+    console.log(+s4)//数值0
+
+    var s5=1.1;
+    console.log(+s5)//值未变
+
+    var s6={
+        valueOf:function(){
+            return -1;
+        }
+    }
+    console.log(+s6)//变成数值-1
+
+
+    var s1="01";
+    console.log(-s1)//数值-1
+
+    var s2="1.1";
+    console.log(-s2)//数值-1.1
+
+    var s3="z";
+    console.log(-s3)//NaN
+
+    var s4=false;
+    console.log(-s4)//数值0
+
+    var s5=1.1;
+    console.log(-s5)//变成-1.1
+
+    var s6={
+        valueOf:function(){
+            return -1;
+        }
+    }
+    console.log(-s6)//数值1
+
+    console.log(!{a:123});
+    console.log(!"");
+    console.log(!"123");
+    console.log(!123);//fasle
+    console.log(!Infinity);//fasle
+    console.log(!null);//true
+    console.log(!NaN);//true
+
+    console.log({}&&123);
+
+    console.log(true&&{});
+
+    console.log({a:123}&&{b:456});
+
+    console.log(null&&{b:456});
+
+    console.log({}||{b:456});
+
+    console.log(false||{b:456});
+
+    console.log({a:123}||{b:456});
+
+    console.log(NaN*12);
+
+    console.log(26%5);
+
+    console.log(Number.POSITIVE_INFINITY%2);
+
+    console.log(12%0);
+
+    console.log(Number.POSITIVE_INFINITY%Number.POSITIVE_INFINITY);
+    console.log(2%Number.POSITIVE_INFINITY);
+    console.log(0%1000);
+
+    console.log(NaN+123);
+
+    console.log(Infinity+Infinity);
+
+    console.log(-Infinity+Infinity); //NaN
+
+    console.log(0+0); //NaN
+
+    console.log(0+{}); //NaN
+    console.log({}.toString());
+    console.log("1"+false);
+
+    console.log(-Infinity-(-Infinity)); //-Infinity
+
+    console.log("23"<3);//true,2的字符编码值为50,3的字符编码值为51
+
+    console.log("Ba"<"a");//true,B的字符编码为66,a的字符编码为97
+
+    console.log(false==0);
+    console.log("12"==12);
+
+    console.log(typeof {}.valueOf())
+
+    var a1={};
+    var b1=a1;
+    console.log(a1==b1);
+
+
+    console.log("55"===55); //false
+    console.log(null===undefined); //false
+    console.log(true===1); //false
+
+    var num2=10;
+    num2 *= num2
+    console.log(num2);
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    console.log(Number(true));//1
+    console.log(Number(false));//0
+    console.log(Number(123));//123
+    console.log(Number(null));//0
+    console.log(Number(undefined));//NaN
+    console.log(Number("0123"));//前导零被忽略了
+    console.log(Number("01.23"));//1.23
+    console.log(Number("0xf"));//15
+    console.log(Number(""));//0
+    console.log(Number("1x2"));
+    console.log(Number({a:123}));
+    console.log(Number(NaN));
+
+    console.log(parseInt("a21"));//NaN
+    console.log(parseInt("0xA"));//10
+    console.log(parseInt("0xAF",16));//175
+    console.log(parseFloat("22.34.5"));//22.34
+    console.log(parseFloat("22"));//22
+    console.log(parseFloat("a22"));//NaN
+    console.log(parseFloat("0xf"));//0
+</script>

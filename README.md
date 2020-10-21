@@ -28,4 +28,7 @@
 [升级打怪-精读javascript高级程序(第二章)](https://blog.csdn.net/ken_ding/article/details/109139824)
 <br/>
 
-[升级打怪-精读javascript高级程序(第三章)](https://blog.csdn.net/ken_ding/article/details/109139824)
+[升级打怪-精读javascript高级程序(第三章)](https://blog.csdn.net/ken_ding/article/details/109155521)
+<br/>
+
+[升级打怪-精读javascript高级程序(第四章)](https://blog.csdn.net/ken_ding/article/details/109155521)
