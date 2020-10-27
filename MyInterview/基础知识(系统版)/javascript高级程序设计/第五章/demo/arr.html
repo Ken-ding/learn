@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var arr= new Array(3);
+    console.log(arr);//Array(3)
+
+    var arr1=new Array("aa","bb","cc");
+    console.log(arr1);//["aa", "bb", "cc"]
+
+    var arr2=Array("1","2","3");
+    console.log(arr2);//["1", "2", "3"]
+
+    var arr3=[1,2,,3];
+    console.log(arr3[5])
+
+    var arr4=[1,2,,3];
+    arr4[5]="aa";
+    console.log(arr4)
+
+    var colors=["red","blue","green"];
+    colors[0]="123";
+    console.log(colors);//["123", "blue", "green"]
+
+    var colors1=["red","blue","green"];
+    colors[4]="123";
+    console.log(colors);//["123", "blue", "green"]
+
+    var colors2=["red","blue","green"];
+    console.log(colors2.length);//3
+
+    var colors3=["red","blue","green"];
+    colors3.length=2
+    console.log(colors3);//["red", "blue"]
+
+    var colors4=["red","blue","green"];
+    colors4[colors4.length]="black"
+    console.log(colors4);//["red", "blue", "green", "black"]
+
+    var arr=[];
+    var res=arr instanceof Array
+    console.log(res);
+
+
+    var res1=Array.isArray(arr)
+    console.log(res1);
+
+    var colors5=["red","blue","green"];
+    console.log(colors5.toLocaleString());
+    console.log(colors5.toString());
+    console.log(colors5.valueOf());
+
+    var colors6=["red","blue","green"];
+    colors6.push("black");
+    colors6.pop();
+    console.log(colors6);
+
+
+    var shuzu=[];
+    shuzu.push("1","2","3");//推入多项
+    console.log(shuzu);//["1", "2", "3"]
+
+    shuzu.push("4");//推入一项
+    console.log(shuzu);//["1", "2", "3", "4"]
+
+    console.log(shuzu.pop());//推出一项，返回4
+    console.log(shuzu);//["1", "2", "3"]
+
+    var shuzu1=["0"];
+    shuzu1.unshift("1","2","3");//推入多项
+    console.log(shuzu1);//["1", "2", "3", "0"]
+
+    console.log(shuzu1.shift());//推出一项，返回1
+    console.log(shuzu1);//["2", "3", "0"]
+
+    var shuzu2=[1,2,3,6,5];
+    // shuzu2.reverse();
+    // console.log(shuzu2);//[5, 4, 3, 2, 1]
+   
+    // shuzu2.sort();//默认排序
+    // console.log(shuzu2);//[1, 2, 3, 5, 6]
+
+    shuzu2.sort((x,y)=>{
+        return x-y;
+    });//自定义升排序
+    console.log(shuzu2);//[1, 2, 3, 5, 6]
+
+    shuzu2.sort((x,y)=>{
+        return y-x;
+    });//自定义升排序
+    console.log(shuzu2);//[6, 5, 3, 2, 1]
+
+    var shuzu3=[1,2,3];
+    var shuzu4=["-",4,5];
+    var shuzu5=shuzu3.concat(shuzu4);
+    console.log(shuzu5);[1, 2, 3, "-", 4, 5]
+
+    var shuzu6=[4,5,7,8,6,10];
+    var shuzu7=shuzu6.slice(0,4);
+    console.log(shuzu7);//[4, 5, 7, 8]
+
+    var shuzu8=shuzu6.slice(0,-1);
+    console.log(shuzu8);//[4, 5, 7, 8]
+
+    var shuzu9=shuzu6.slice(4,2);
+    console.log(shuzu9);//[]
+
+    var shuzu10=[4,5,7,8,6,10];
+    shuzu10.splice(2,1);//从下标为2的位置开始删除一项
+    console.log(shuzu10);//[4, 5, 8, 6, 10]
+
+    var shuzu11=[4,5,7,8,6,10];
+    shuzu11.splice(2,0,"red","bule");//从下标为2的位置开始插入多项
+    console.log(shuzu11);//[4, 5, "red", "bule", 7, 8, 6, 10]
+
+    var shuzu12=[4,5,7,8,6,10];
+    shuzu12.splice(2,2,"red","bule");//从下标为2的位置开始删除两项，并添加两项
+    console.log(shuzu12);//[4, 5, "red", "bule", 6, 10]
+
+    var num=[1,2,3,4,5,6,7,8];
+	console.log(num.indexOf(4));//3
+    console.log(num.indexOf(9));//-1
+    console.log(num.lastIndexOf(4));//3
+
+    console.log(new Date(Date.parse("2005-05-25T17:55:55")));
+    console.log(new Date(Date.UTC(2005,4,24,17,55,55)));
+
+    var local=Date.parse("2000/02/01 00:00:00");
+    var UTC=Date.UTC(2000,0,31,16,0,0)
+
+    console.log(local);
+    console.log(UTC);
+
+    console.log((UTC-local)/1000/3600);
+</script>
