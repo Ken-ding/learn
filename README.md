@@ -39,7 +39,10 @@
 [升级打怪-精读javascript高级程序(第五章)](https://blog.csdn.net/ken_ding/article/details/109211727)
 <br/>
 
-[升级打怪-精读javascript高级程序(第六章)](#)
+[升级打怪-精读javascript高级程序(第六章)](https://blog.csdn.net/ken_ding/article/details/109280846)
+<br/>
+
+[升级打怪-精读javascript高级程序(第七章)](#)
 
 ### 精读图解http
 [升级打怪-精读图解http(第一章)](#)

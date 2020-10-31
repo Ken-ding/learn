@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function Super(name){
+        this.prop="prop";
+        this.name=name;
+    }
+
+    Super.prototype.getProp=function(){
+        console.log(this.prop);
+    }
+
+    function Sub(){
+        Super.call(this,"Tom")//继承了Super,同时还传入了参数
+    }
+
+    Sub.prototype.name="sub";
+
+    Sub.prototype=new Super();//继承了Super的实例
+
+    var instance=new Sub();
+
+    console.log(Sub.prototype);//重写了Sub的原型对象
+
+    instance.getProp();//可以调用,Super的原型方法,因为sub的原型是Super的实例
+</script>

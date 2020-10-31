@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function Foo(){}
+    
+    function NEW_OBJECT(Foo){
+        var obj={};
+        obj.__proto__=Foo.prototype;
+        Foo.apply(obj,arguments)
+        return obj;
+    }
+
+    var obj=NEW_OBJECT(Foo);
+
+    console.log(obj);
+
+    let aa=Object.create(Foo.prototype)
+    console.log(aa);
+    var boo=new Boolean();
+    console.log(boo);
+</script>
