@@ -69,10 +69,13 @@
 [升级打怪-精读javascript高级程序(第七章)](#)
 <br/>
 
-[升级打怪-精读javascript高级程序-前七章总结](#)
+[升级打怪-精读javascript高级程序-(ECMAScipt篇复盘)](#)
 
 #### BOM篇
 [升级打怪-精读javascript高级程序-(第八章)](#)
+<br/>
+
+[升级打怪-精读javascript高级程序-(BOM篇复盘)](#)
 
 #### DOM篇
 [升级打怪-精读javascript高级程序-(第九章)](#)
@@ -91,6 +94,9 @@
 <br/>
 
 [升级打怪-精读javascript高级程序-(第十四章)](#)
+<br/>
+
+[升级打怪-精读javascript高级程序-(DOM篇复盘)](#)
 
 ### 精读图解http
 [升级打怪-精读图解http(第一章)](#)
