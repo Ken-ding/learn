@@ -69,7 +69,7 @@
 [升级打怪-精读javascript高级程序(第七章)](#)
 <br/>
 
-[升级打怪-精读javascript高级程序-(ECMAScipt篇复盘)](#)
+[升级打怪-精读javascript高级程序-(ECMAScript篇复盘)](#)
 
 #### BOM篇
 [升级打怪-精读javascript高级程序-(第八章)](#)
