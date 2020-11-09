@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // (function(){
+    //     //使用函数作用域,来创建块级作用域
+    //     var i=3;
+    //     function test(){
+    //         console.log(i);
+    //     }
+    //     debugger
+    //     test();
+    // })()
+
+    // function test(){
+    //     console.log(i);////Uncaught ReferenceError: i is not defined
+    // }
+    // test();
+
+    // (function(){
+    //     //私有变量和私有函数
+    //     var privateVariable=10;
+
+    //     function privateFunction(){
+    //         return false;
+    //     }
+
+    //     //构造函数
+    //     MYObject=function(){};
+
+    //     //公有/特权方法
+    //     MYObject.prototype.publicMethod=function(){
+    //         privateVariable++;
+    //         console.log(privateVariable);
+    //         return privateFunction();
+    //     }
+
+    // })()
+    // var o=new MYObject();
+    // o.publicMethod();//11
+
+    // var singleton=function(){
+    //     //私有变量和函数
+    //     var privateVariable=10;
+
+    //     function privateFunction(){
+    //         return false;
+    //     }
+
+    //     return {
+    //         publicProperty:true,
+    //         publicMethod:function(){
+    //             privateVariable++;
+    //             console.log(privateVariable);
+    //             return privateFunction();
+    //         }
+    //     }
+
+    // }
+
+    var application=function(){
+        //私有变量和函数
+        var components=new Array();
+
+        //初始化
+        components.push(new BaseComponent());
+
+        //公共
+        return{
+            getComponentCount:function(){
+                return components.length;
+            },
+            registerComponent:function(component){
+                if(typeof component=="object"){
+                    components.push(component);
+                }
+            }
+        }
+    }()
+
+    var application=function(){
+        //私有变量和函数
+        var components=new Array();
+
+        //初始化
+        components.push(new BaseComponent());
+
+        //创建application的一个局部副本
+        var app=new BaseComponent();
+
+        //公共接口
+        app.getComponentCount=function(){
+            return components.length;
+        }
+
+        app.registerComponent=function(component){
+            if(typeof component=="object"){
+                components.push(component)
+            }
+        }
+
+        return app;
+    }()
+
+</script>

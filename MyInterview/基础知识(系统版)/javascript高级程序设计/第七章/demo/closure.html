@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function fn1() {
+    var a = 1;
+    function fn2() {
+      console.log(a);
+    }
+    fn2
+  }
+  fn1();
+
+  function fn3(){
+    var a = 1;
+    return function fn4() {
+      console.log(a);
+    }
+  }
+  fn3()();//1
+
+
+  function fn6(fn) {
+      fn()
+  }
+  function fn5(){
+    var a=1;
+    fn6(function(){
+        console.log(a);
+    })
+  }
+// debugger
+  fn5()
+
+  function demo(){
+    var result=new Array();
+    for(var i=0;i<10;i++){
+        result[i]=function(num){
+            return function(){
+                console.log(this);
+                return num;
+            };
+        }(i)
+    }
+    return result;
+  }
+//  debugger
+ demo()[2]();
+
+ 
+
+</script>

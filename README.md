@@ -66,10 +66,10 @@
 [升级打怪-精读javascript高级程序(第六章)](https://blog.csdn.net/ken_ding/article/details/109280846)
 <br/>
 
-[升级打怪-精读javascript高级程序(第七章)](#)
+[升级打怪-精读javascript高级程序(第七章)](https://blog.csdn.net/ken_ding/article/details/109383440)
 <br/>
 
-[升级打怪-精读javascript高级程序-(ECMAScript篇复盘)](#)
+[升级打怪-精读javascript高级程序-(ECMAScript篇复盘)](https://blog.csdn.net/ken_ding/article/details/109460007)
 
 #### BOM篇
 [升级打怪-精读javascript高级程序-(第八章)](#)
