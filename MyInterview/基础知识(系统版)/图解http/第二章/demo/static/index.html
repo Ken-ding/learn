@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="get()">发送请求</button>
+    <button onclick="getCookies()">获取Cookies</button>
+    <script>
+        var xhr=new XMLHttpRequest();
+        function get(){
+            xhr.open("GET","/test",false);
+            xhr.setRequestHeader("Connection", "Close");//被禁止设置
+            xhr.send();
+        }
+        function getCookies(){
+            xhr.open("GET","/getCookies",false);
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
