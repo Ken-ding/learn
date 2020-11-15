@@ -74,15 +74,15 @@
 [升级打怪-精读javascript高级程序-(ECMAScript篇复盘)](https://blog.csdn.net/ken_ding/article/details/109460007)
 
 ##### BOM篇
-[升级打怪-精读javascript高级程序-(第八章)](#)
+[升级打怪-精读javascript高级程序-(第八章)](https://blog.csdn.net/ken_ding/article/details/109655196)
+<br/>
+
+[升级打怪-精读javascript高级程序-(第九章)](#)
 <br/>
 
 [升级打怪-精读javascript高级程序-(BOM篇复盘)](#)
 
 ##### DOM篇
-[升级打怪-精读javascript高级程序-(第九章)](#)
-<br/>
-
 [升级打怪-精读javascript高级程序-(第十章)](#)
 <br/>
 
