@@ -77,7 +77,7 @@
 [升级打怪-精读javascript高级程序-(第八章)](https://blog.csdn.net/ken_ding/article/details/109655196)
 <br/>
 
-[升级打怪-精读javascript高级程序-(第九章)](#)
+[升级打怪-精读javascript高级程序-(第九章)](https://blog.csdn.net/ken_ding/article/details/109627661)
 <br/>
 
 [升级打怪-精读javascript高级程序-(BOM篇复盘)](#)

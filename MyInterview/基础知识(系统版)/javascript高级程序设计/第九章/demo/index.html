@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+<script>
+  function getElement(id) {
+    if (document.getElementById(id)) {
+      return document.getElementById(id);
+    } else if (document.all) {
+      return document.all[id];
+    } else {
+      throw new Error("no way to retrieve element");
+    }
+  }
+  console.log(getElement("root"));
+
+  function isHostMethod(object,property){
+      var t=typeof object[property];
+      return t=="function"||(!!(t=="object"&&object[property]))||t=='unknown';
+  }
+
+  let res=isHostMethod(window,"XMLHttpRequest");
+  console.log(res);
+
+  function hasDontEnumQuirk(){
+      var o={toString:function(){}};
+
+      for(var prop in o){
+          if(prop=="toString"){
+              return false;
+          }
+      }
+      return true
+  }
+  console.log(hasDontEnumQuirk());
+
+
+  function hasDontShadowEnumQuirk(){
+      var o={toString:function(){}};
+      var cunt=0;
+      for(var prop in o){
+          if(prop=="toString"){
+            cunt++
+          }
+      }
+      return cunt
+  }
+  console.log(hasDontShadowEnumQuirk());
+
+  console.log(navigator.userAgent);
+</script>
