@@ -108,5 +108,13 @@
 <br/>
 
 [升级打怪-精读图解http(第三章)](https://blog.csdn.net/ken_ding/article/details/109620440)
+<br/>
 
+[升级打怪-精读图解http(第四章)](https://blog.csdn.net/ken_ding/article/details/110183512)
+<br/>
+
+[升级打怪-精读图解http(第五章)](#)
+<br/>
+
+[升级打怪-精读图解http(第六章)](#)
 ### 提高篇
