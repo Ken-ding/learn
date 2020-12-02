@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="http://127.0.0.1:8889/static/demo.css">
+</head>
+<body>
+    <button onclick="send()">发送</button>
+</body>
+</html>
+<script>
+
+    var baseUrl="http://127.0.0.1:8889"
+    var url=`${baseUrl}/`
+    var xhr=new XMLHttpRequest();
+    var time;
+    function send(){
+         xhr.open("get",url);
+         time = Date.now()
+         xhr.send(); 
+    }
+
+    xhr.setRequestHeader();
+
+    xhr.addEventListener('load', function(data){
+            console.log(data)
+            console.log(Date.now() - time)
+    });
+</script>
